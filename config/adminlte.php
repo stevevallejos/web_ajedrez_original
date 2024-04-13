@@ -359,7 +359,7 @@ return [
         ],
         [
             'text' => 'Tabla',
-            'url' => 'info/tabla',
+            'url' => 'mitablero',
             'icon' => 'fa-solid fa-chess-board fa-flip',
             'label' => 200,
             'label_color' => 'success',

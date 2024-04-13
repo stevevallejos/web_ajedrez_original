@@ -18,25 +18,25 @@
                 </t-head>
             <t-body> 
                 <tr>
-                <td>3</td>
-                    <td>Que es la captura</td>
-                    <td>La Dama puede capturar una pieza enemiga moviéndose hacia una casilla ocupada por una pieza enemiga, reemplazándola y retirándola del tablero.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                <td>4</td>
+                <td>1</td>
                     <td>El origen de su nombre</td>
-                    <td>Aunque es conocida como "reina" en el ajedrez moderno, en sus inicios, esta pieza era llamada "vizir" en el ajedrez persa, y "ferz" en el ajedrez árabe. El término "reina" probablemente se popularizó durante la época medieval en Europa.</td>
+                    <td>El nombre "torre" en el ajedrez se deriva del término persa antiguo "rukh", que significa "carro de guerra".</td>
                     <td></td>
                     <td></td>
                     <td></td>
                 </tr>
                 <tr>
-                <td>5</td>
-                    <td>Cuantos Damas hay?</td>
-                    <td>Cada jugador tiene una Dama en total 2 Damas</td>
+                <td>2</td>
+                    <td>Cuantos Torres hay?</td>
+                    <td>En una partida estándar de ajedrez, cada jugador comienza con dos torres, para un total de cuatro torres en el tablero. Las torres se colocan en las esquinas de la fila más interna del tablero al comienzo del juego.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                <td>3</td>
+                    <td>Que es la Maniobras de desviación</td>
+                    <td>En algunas ocasiones, se puede usar una torre para desviar la atención de una pieza enemiga importante. Por ejemplo, mover una torre a una casilla que ataque a una pieza enemiga, obligando al oponente a responder, mientras simultáneamente se abre una línea de ataque para otra pieza propia.</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -48,6 +48,9 @@
         </div>
         <div class="col-6">
             <img src={{ asset('img/torreblanca.png') }} alt="" height="700">
+            <button type="button" class="btn btn-warning">COMPRAR !!!</button>
+            <a href="file:///D:/projectos%20programacion/canvas/prueba.html" class="btn btn-success">Mas detalles a fondo.</a>
+            <a href="./masinfo.blade.php" class="btn btn-primary" >leer mas</a>
         </div>
     </div>
 
@@ -67,22 +70,23 @@
         </thead>
         <tbody>
         <tr>
-            <td>1</td>
+            <td>4</td>
             <td>Primer movimiento:</td>
             <td>El primer movimiento de la torre en el juego de ajedrez es muy simple: la torre se mueve desde su posición inicial a cualquier casilla vacía que esté disponible en la fila o columna en la que se encuentra. Este movimiento es importante para controlar el centro del tablero y para conectar las torres entre sí, lo que puede ser estratégicamente beneficioso para el jugador.</td>
             <td><img src="/public/img/primer_movimiento.png" alt=""></td>
         </tr>
-        <td>4</td>
-            <td>que es un peón pasado?</td>
-            <td>Un peón pasado es un peón que no tiene peones enemigos que lo puedan bloquear en su camino hacia la promoción. Los peones pasados son valiosos porque pueden convertirse en una nueva pieza y representar una amenaza importante para el oponente.</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
         <tr>
-        <td>8</td>
-            <td>Dato curioso</td>
-            <td>Un hecho poco conocido sobre los peones es que en la historia del ajedrez, hubo una variante llamada "Peón del Rey", en la cual el peón que estaba en la columna de al lado del rey podía mover dos casillas hacia adelante en su primer movimiento, similar al "Movimiento Inicial Doble" de los peones en el ajedrez estándar. Sin embargo, esta variante no se popularizó y eventualmente cayó en desuso.</td>
+                <td>5</td>
+                    <td>Que es sacrificio de torre</td>
+                    <td>Aunque menos común que otros sacrificios, a veces se pueden hacer sacrificios de torre para obtener una ventaja posicional o táctica. Por ejemplo, sacrificando una torre para abrir una línea de ataque hacia el rey enemigo o para crear una oportunidad de mate.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        <tr>
+        <td>6</td>
+            <td>Que es son las torres pasadas</td>
+            <td>Las torres pasadas son aquellas que no tienen piezas enemigas que las bloqueen en su camino hacia la octava fila. Estas torres pueden ser muy poderosas, ya que pueden avanzar hasta la fila final y convertirse en una pieza más poderosa, como una dama o un caballo.</td>
             <td></td>
             <td></td>
             <td></td>

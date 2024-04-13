@@ -16,3 +16,6 @@ route::get('info/torre',function(){
 route::get('info/dama',function(){
     return view("dama.index");
 });
+route::get("mitablero",function(){
+ return view("tabla.tablero");
+});
