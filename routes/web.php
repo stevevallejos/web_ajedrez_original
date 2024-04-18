@@ -19,3 +19,10 @@ route::get('info/dama',function(){
 route::get("mitablero",function(){
  return view("tabla.tablero");
 });
+route::get("tabla/idiomas",function(){
+    return view("tabla.idiomas");
+});
+
+route::get("info/secretos",function(){
+    return view("secretos.secretos");
+});
