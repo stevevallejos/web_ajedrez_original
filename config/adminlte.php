@@ -236,14 +236,6 @@ return [
     |
     */
 
-    'right_sidebar' => false,
-    'right_sidebar_icon' => 'fas fa-cogs',
-    'right_sidebar_theme' => 'dark',
-    'right_sidebar_slide' => true,
-    'right_sidebar_push' => true,
-    'right_sidebar_scrollbar_theme' => 'os-theme-light',
-    'right_sidebar_scrollbar_auto_hide' => 'l',
-
     /*
     |--------------------------------------------------------------------------
     | URLs
@@ -371,15 +363,15 @@ return [
             'label_color' => 'success',
         ],
         [
-            'text' => 'Reglas',
-            'url' => 'info/reglas',
-            'icon' => 'fa-solid fa-scale-balanced fa-bounce',
+            'text' => 'JUGAR',
+            'url' => 'juego/chessboard',
+            'icon' => 'fa-solid fa-chess fa-beat',
             'label_color' => 'success',
         ],
         [
-            'text' => 'Angulos y coordenadas',
-            'url' => 'info/angulos',
-            'icon' => 'fa-solid fa-ruler-combined',
+            'text' => 'tienda',
+            'url' => 'tienda/chess',
+            'icon' => 'fa-solid fa-cart-shopping fa-beat',
             'label_color' => 'success',
         ],
         ['header' => 'account_settings'],

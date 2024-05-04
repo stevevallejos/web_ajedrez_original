@@ -48,9 +48,16 @@
         </div>
         <div class="col-6">
             <img src={{ asset('img/torreblanca.png') }} alt="" height="700">
-            <button type="button" class="btn btn-warning">COMPRAR !!!</button>
-            <a href="file:///D:/projectos%20programacion/canvas/prueba.html" class="btn btn-success">Mas detalles a fondo.</a>
-            <a href="./masinfo.blade.php" class="btn btn-primary" >leer mas</a>
+            <div class="row"> 
+                <a href="https://wa.me/71691867" class="btn btn-success"><i class="fa-brands fa-whatsapp fa-beat"></i> whatsapp</a>
+            <div class="col-4">
+                <a href="{{ url('QR/torre')}}" class="btn btn-dark"><i class="fa-solid fa-qrcode fa-beat"></i> QR</a>
+            </div>
+            <div>
+                <a href="" class="btn btn-warning"><i class="fa-solid fa-dollar-sign fa-beat"></i> COMPRAR</a>
+            </div>
+         
+        </div>
         </div>
     </div>
 
@@ -99,6 +106,7 @@
 @stop
 
 @section('css')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 @stop
 
 @section('js')

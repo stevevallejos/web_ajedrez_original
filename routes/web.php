@@ -26,3 +26,22 @@ route::get("tabla/idiomas",function(){
 route::get("info/secretos",function(){
     return view("secretos.secretos");
 });
+
+route::get("QR/torre",function(){
+    return view("QR.QR");
+});
+
+route::get("tienda/chess",function(){
+    return view("tienda.tienda");
+});
+
+route::get("tienda/tablerovino",function(){
+    return view("tienda.tablerovino");
+});
+
+route::get("tienda/tablerovinocompra",function(){
+    return view("tienda.tablerovinocompra");
+});
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

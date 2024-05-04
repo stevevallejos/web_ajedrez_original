@@ -6,15 +6,15 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>secretos y curiosidades</h1>
+    <h1 style="color: black;">secretos y curiosidades</h1>
 @stop
 
 @section('content')
-<body>
+<body >
     <div class="text-center">
         <img src="/img/robot.jpg" alt="imagen" width="300px">
-        <h2>EL ROBOT DEL AJEDREZ ABB-120</h2>
-        <p class="text-align text-justify">Los robots ajedrecistas son máquinas diseñadas para jugar al ajedrez. Pueden ser programas de software como *Stockfish* o *AlphaZero*, o robots físicos con brazos mecánicos para mover piezas en tableros reales.
+        <h2 style="color: black;">EL ROBOT DEL AJEDREZ ABB-120</h2>
+        <p class="text-align text-justify" style="color: black;">Los robots ajedrecistas son máquinas diseñadas para jugar al ajedrez. Pueden ser programas de software como *Stockfish* o *AlphaZero*, o robots físicos con brazos mecánicos para mover piezas en tableros reales.
 
             Estos robots utilizan inteligencia artificial y aprendizaje automático para mejorar su juego con el tiempo. Pueden enfrentar a humanos de distintos niveles y se utilizan para enseñar ajedrez.
             
@@ -22,22 +22,22 @@
     </div>
     <img src="/img/3033.jpg" alt="" width="300px">
     <img src="/img/maxresdefault.jpg" alt="" width="400px">
-    <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <p style="color: black;">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
     <div class="text-center">
-        <h2>DONDE NACIO EL AJEDREZ?</h2>
+        <h2 style="color: black;">DONDE NACIO EL AJEDREZ?</h2>
         <img src="/img/images.png" alt="" width="150px">
         <img src="/img/225px-European_flag,_incorrect_star_rotation.svg.png" alt="" width="150px">
-        <P>El ajedrez se originó en la India alrededor del siglo VI d.C. El juego era conocido como chaturanga, que significa "cuatro divisiones del ejército" en sánscrito, refiriéndose a las cuatro piezas principales: infantería, caballería, elefantes y carros. Desde la India, el juego se difundió a través de Persia y luego al mundo árabe, donde se convirtió en shatranj, y más tarde se extendió a Europa y otras partes del mundo, evolucionando hacia el ajedrez moderno.</P>
-        <h4>donde nacio el ajedrez como hoy en dia conozemos</h4>
-        <p>El ajedrez como lo conocemos hoy, con un tablero de 64 casillas en blanco y negro, y las reglas modernas, se desarrolló en **Europa**, principalmente en España e Italia, durante el siglo XV. 
+        <P style="color: black;">El ajedrez se originó en la India alrededor del siglo VI d.C. El juego era conocido como chaturanga, que significa "cuatro divisiones del ejército" en sánscrito, refiriéndose a las cuatro piezas principales: infantería, caballería, elefantes y carros. Desde la India, el juego se difundió a través de Persia y luego al mundo árabe, donde se convirtió en shatranj, y más tarde se extendió a Europa y otras partes del mundo, evolucionando hacia el ajedrez moderno.</P>
+        <h4 style="color: black;">donde nacio el ajedrez como hoy en dia conozemos</h4>
+        <p style="color: black;">El ajedrez como lo conocemos hoy, con un tablero de 64 casillas en blanco y negro, y las reglas modernas, se desarrolló en **Europa**, principalmente en España e Italia, durante el siglo XV. 
 
             El juego evolucionó a partir del ajedrez árabe (*shatranj*), que fue introducido en Europa a través de la conquista de la península ibérica por los árabes. A lo largo de los siglos, se hicieron cambios en las reglas y en las piezas para crear el ajedrez moderno.
             
             Los colores blanco y negro del tablero se popularizaron en esa época, y las reglas actuales fueron estandarizadas en el siglo XIX, principalmente por la labor de diversas federaciones de ajedrez.</p>
     </div>
-    <p>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <p style="color: black;">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
     <div class="text-center">
-        <h2>QUIENES SON LOS MEJORES JUGADORES DE AJEDREZ?</h2>
+        <h2 style="color: black;">QUIENES SON LOS MEJORES JUGADORES DE AJEDREZ?</h2>
         <div class="card" style="width: 18rem;" class="row">
             <div class="card-body">
                 <img src="/img/reyenigma.jpg" alt="">
@@ -47,7 +47,7 @@
         <div class="card" style="width: 18rem; float: right;" class="row">
             <div class="card-body">
                 <img src="/img/magnus.webp" alt="" width="200px" class="row">
-                <h5 class="card-title text-center">MAGNUS CARLSEN <img src="/img/Flag_of_the_United_States.svg" width="30px" alt=""></h5>
+                <h5 class="card-title text-center">MAGNUS CARLSEN <img src="/img/Flag_of_Norway.svg.png" width="30px" alt=""></h5>
                 <p class="card-text">Magnus Carlsen es un jugador de ajedrez noruego, campeón mundial desde 2013. Conocido por su estilo innovador y habilidad táctica, es considerado uno de los mejores jugadores de la historia. Además de su éxito en torneos, Carlsen ha promovido el ajedrez a través de su compañía Play Magnus Group.</p>
             </div>
         </div>
@@ -84,8 +84,29 @@
 </body>
 @stop
 
-
-
 @section('js')
     <script> console.log("Hi, I'm using the Laravel-AdminLTE package!"); </script>
+@stop
+
+@section('footer')
+    <p style="color: black;">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <div class="text-center">
+        <h2 style="color: black;">¿CÓMO SE JUEGA AL AJEDREZ?</h2>
+        <img src="/img/movimiento_estandar.png" alt="" width="200px">
+        <p style="color: black;">
+            El ajedrez es un juego de mesa para dos jugadores que se juega en un tablero de 64 casillas. Cada jugador tiene 16 piezas al comienzo del juego, incluyendo peones, torres, caballos, alfiles, reina y rey. El objetivo del juego es dar jaque mate al rey del oponente, lo que significa que el rey está en una posición de amenaza y no puede moverse sin ser capturado.
+            Cada pieza tiene movimientos específicos en el tablero, y los jugadores se turnan para mover sus piezas con el objetivo de capturar las piezas del oponente y controlar el tablero. El ajedrez requiere estrategia, táctica y visión a futuro para anticipar los movimientos del oponente y planificar una estrategia ganadora.
+        </p>
+    </div>
+    <p style="color: black;">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <div class="text-center">
+        <h2 style="color: black;">¿CUÁLES SON LAS REGLAS DEL AJEDREZ?</h2>
+        <img src="/img/captura-al-paso-1.png" alt="" width="200px">
+        <p style="color: black;">Las reglas del ajedrez son simples y claras, pero el juego en sí es complejo y desafiante. Algunas de las reglas básicas del ajedrez incluyen:
+
+            - Cada jugador tiene 16 piezas al comienzo del juego, incluyendo peones, torres, caballos, alfiles, reina y rey.
+            - El objetivo del juego es dar jaque mate al rey del oponente, lo que significa que el rey está en una posición de amenaza y no puede moverse sin ser capturado.
+            - Cada pieza tiene movimientos específicos en el tablero, y los jugadores se turnan para mover sus piezas con el objetivo de capturar las piezas del oponente y controlar el tablero.
+        </p>
+    </div> 
 @stop
