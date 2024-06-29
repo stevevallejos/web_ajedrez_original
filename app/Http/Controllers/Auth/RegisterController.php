@@ -7,6 +7,8 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\UploadedFile;
 
 class RegisterController extends Controller
 {
@@ -63,10 +65,37 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+    
+        
+        if (asset($data['foto']) && $data['foto'] instanceof UploadedFile) {
+            $foto = $data['foto'];
+            $fotoPhat = $foto->store('foto', 'public');
+        }
+        dd($data);
+
+        $user = new User();
+        $user->name = $data['name'];
+        $user->password = Hash::make($data['password']);
+        $user->email = $data['email'];
+        $user->foto = $data['foto'];
+        $imagen=file($data["foto"]);
+        $nombreArchivo="foto.jpg";
+        if (isset($data['foto']) && $data['foto']->isValid()) {
+            // Generar un nombre único para la imagen
+            $nombreImagen = time().'.'.$data['foto']->getClientOriginalExtension();
+    
+            // Guardar la imagen usando Storage (opcional)
+            Storage::disk('public')->putFileAs('imagenes', $data['foto'], $nombreImagen);
+    
+          
+    
+            // Asignar el nombre de archivo a la propiedad 'foto' del usuario
+            $user->foto = $nombreImagen;
+        }
+        
+        $user->save();  
+        return $user;
     }
+
+
 }

@@ -288,9 +288,14 @@ return [
     'menu' => [
         // Navbar items:
         [
-            'type' => 'navbar-search',
-            'text' => 'search',
+            'text' => 'login',
             'topnav_right' => true,
+            'url' => 'login',
+        ],
+        [
+            'text' => 'register',
+            'topnav_right' => true,
+            'url' => 'register',
         ],
         [
             'type' => 'fullscreen-widget',
@@ -380,6 +385,18 @@ return [
             'url' => 'admin/settings',
             'icon' => 'fas fa-fw fa-user',
         ],
+        [
+            'text' => 'crear usuario',
+            'url' => 'crear/usuario',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+
+        [
+            'text' => 'listar usuario',
+            'url' => 'listar/usuario',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+
         [
             'text' => 'change_password',
             'url' => 'admin/settings',

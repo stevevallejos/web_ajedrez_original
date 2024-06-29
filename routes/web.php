@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -42,6 +43,13 @@ route::get("tienda/tablerovino",function(){
 route::get("tienda/tablerovinocompra",function(){
     return view("tienda.tablerovinocompra");
 });
+route::get("crear/usuario",[UserController::class,'create']);
+
+route::post("guardar/usuario",[UserController::class,'store'])->name('users.store');
+
+route::get("listar/usuario",[UserController::class,'index'])->name('users.index');
+
 Auth::routes();
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
