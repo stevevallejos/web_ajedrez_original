@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Str;
 
 class RegisterController extends Controller
 {
@@ -66,12 +67,15 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
     
-        
+        //dd($data);
         if (asset($data['foto']) && $data['foto'] instanceof UploadedFile) {
             $foto = $data['foto'];
-            $fotoPhat = $foto->store('foto', 'public');
+                $photoName = Str::random(5).'foto.'.$foto->getClientOriginalExtension();
+
+                $photoPath = $foto->storeAs('fotos', $photoName, 'public');
+                //$photoPath = $photo->store('photos',$photoName 'public');
+
         }
-        dd($data);
 
         $user = new User();
         $user->name = $data['name'];
